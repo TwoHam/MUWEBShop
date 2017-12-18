@@ -1,34 +1,32 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Login Page";
 }
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-6 col-lg-offset-3 text-right">
-            <text style="color: white;">Não Tem cadastro? </text>
+        
+        <div class="col-md-8 col-lg-offset-2 text-right">
+            <text style="color: white;">Não tem cadastro? </text>
             <a asp-area="" asp-controller="Home" asp-action="About">Acesse aqui!</a>
         </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 col-lg-offset-3">
-            <div class="form-horizontal">
-                <div id="divBodyRestrict" class="panel panel-default">
-                    <div id="headerBodyRestrict" class="panel panel-heading">
-                        Área restrita!                      
-                    </div>
-                    <div class="panel-body">
-                        <h4 id="systemMsg" align="center">Bem vindo ao MU-WebShop</h4>
+        
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading"> Área restrita!</div>
+
+                <h4 class="col-md-offset-4" >Bem vindo ao MU-WebShop</h4>
+                <div class="panel-body">
+                    <div class="form-horizontal">
                         <div class="form-group" id="acessType">
-                            <label class="col-lg-3 control-label">Tipo de acesso:</label>
-                            <div class="col-lg-9">
+                            <label class="col-md-3 control-label">Tipo de acesso:</label>                     
+                            <div class="col-md-9">
                                 <div class="radio">
                                     <label>
                                         <input type="radio" name="radioAcessType" id="acessCash" value="Cash" checked="checked" />
                                         Acessar shop CASH
                                     </label>
                                 </div>
+                                
                                 <div class="radio">
                                     <label>
                                         <input type="radio" name="radioAcessType" id="acessGold" value="Gold" />
@@ -39,28 +37,30 @@
                         </div>
 
                         <div class="form-group">
-                            <label id="lblUsername" for="inputUsername" class="col-lg-3 control-label">Usuário:</label>
-                            <div class="col-lg-9">
+                            <label id="lblUsername" for="inputUsername" class="col-md-3 control-label">Usuário:</label>
+                            <div class="col-md-6">
                                 <input type="text" class="form-control" id="inputUsername" placeholder="Seu login" />
-                                <div class="field-validation-valid"></div>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label id="lblPassword" for="inputPassword" class="col-lg-3 control-label">Senha:</label>
-                            <div class="col-lg-9">
+                            <label id="lblPassword" for="inputPassword" class="col-md-3 control-label">Senha:</label>
+                            <div class="col-md-6">
                                 <input type="password" class="form-control" id="inputPassword" placeholder="Sua senha" />
-                                <div class="field-validation-valid"></div>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <div class="col-lg-12 text-right">
-                                <a asp-area="" class="btn btn-xs btn-default" asp-controller="Home" asp-action="About">Autenticar</a>
+                            <div class="col-md-9 text-right">
+                                <a asp-area="" class="btn btn-xs btn-default" asp-controller="Home" asp-action="Home">Autenticar</a>
                                 <a asp-area="" class="btn btn-xs btn-default" asp-controller="Home" asp-action="About">Esqueci minha senha</a>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="panel-footer text-center">
+                    <p >&copy; 2017 - Shop.Prototype - MU SeuMu - Powered by Creative Minds</p>
                 </div>
             </div>
         </div>

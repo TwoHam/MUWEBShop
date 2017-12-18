@@ -20,16 +20,15 @@
     <div class="container body-content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
-                    <div id="bannerHeader" class="panel panel-default">
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="bannerHeader" > <!-- class="panel panel-default" -->
                     </div>
                 </div>
             </div>
         </div>
         @RenderBody()
-        <hr />
-        <footer align="center">
-            <p style="color: gray;">&copy; 2017 - Shop.Prototype | MUONLINE | Powered by Creative Minds</p>
+
+        <footer>
         </footer>
     </div>
 
@@ -53,7 +52,6 @@
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
-
-    @RenderSection("Scripts", required: false)
+		@RenderSection("Scripts", required: false)
 </body>
 </html>

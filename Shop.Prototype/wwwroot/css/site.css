@@ -11,26 +11,19 @@
     padding-right: 15px;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
-
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
-
 #bannerHeader {
-    width: 556px;
     height: 80px;
     background-image:url('/images/banner.jpg');
+}
+
+#newsDiv h4 {
+    border-bottom: 1px dashed #EFF0F1;
+    padding: 5px 0;
+}
+
+#infoDiv h4 {
+    border-bottom: 1px dashed #EFF0F1;
+    padding: 5px 0;
 }
 
 /* Hide/rearrange for smaller screens */
